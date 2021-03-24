@@ -1,3 +1,4 @@
+/*common*/
 *{
     box-sizing: border-box;
     margin:0;
@@ -27,8 +28,14 @@ header{
 .float-left{
     float:left;
 }
+.float-right{
+    float:right;
+}
 .w-50{
     width:50%;
+}
+.w-33{
+    width:33%;
 }
 .list-inline li:not(.btn){
     display: inline-block;
@@ -77,6 +84,7 @@ header{
     padding:20px;
     background-color: #7CBB02;
 }
+/*header*/
 .header-nav{
     height:80px;
     line-height: 80px;
@@ -96,6 +104,7 @@ header{
     width:40%;
     text-align:right;
 }
+
 .jumbotron{
     position:relative;
 }
@@ -106,10 +115,108 @@ header{
     transform:translateY(50%);
 }
     
-
 h1{
     color:white;
     font-size:50px;
     margin-bottom: 30px;
     letter-spacing: 2px;
+}
+
+/*main*/
+.first-section{
+    height:150px;
+    background-color: #D3D3D3;
+    position:relative;
+    text-align:center;
+}
+
+.section-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+h2{
+    margin-bottom: 10px;
+}
+.section-text p{
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.col-left, .col-center, .col-right{
+    text-align: center;
+    width:calc(100%/3 - 50px);
+    margin-right:50px;
+}
+article img{
+    margin-top:50px;
+    margin-bottom:50px;
+    height:200px;
+}
+.text-green{
+    height:80px;
+    color:#86C015;
+    font-size:30px;
+}
+article hr{
+    width:15%;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+.text-grey{
+    color:#808080;
+}
+.desc{
+    line-height: 1.6;
+    font-size:20px;
+    margin-bottom: 20px;
+}
+
+#division{
+    color:lightgrey;
+    margin-bottom:50px;
+
+}
+.art-text{
+    text-align: left;
+    width:80%;
+}
+.art-text > h2{
+     font-size:35px;
+}
+.art-text > a{
+    color:#5586BC;
+    font-size: 18px;;
+}
+footer{
+    padding-top:50px;
+    background-color: #D3D3D3;
+    height: 200px;
+    position:relative;
+}
+label{
+    color: #808080;
+    margin-right:20px ;
+}
+select{
+    width: 100px;
+    margin-right:20px ;
+    text-align: left;
+    color: #808080;
+    border-style: hidden;
+    border-bottom: 1px solid #808080;
+    background-color:#D3D3D3; 
+}
+.part-one, .part-two{
+    display: inline-block;
+}
+
+.help{
+   margin-top:10px;
+   margin-right:80px;
+   position:fixed;
+   bottom:50px;
+   right:350px;
 }
